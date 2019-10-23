@@ -1,10 +1,20 @@
 # Arm-neon-intrinsics
  arm neon 方面的文档真的很少，所以整理下intrinsics指令的内容和文档 ：）
- 
-### 更详细的armeabi-v7a文档可以看[ARMV7 NEON汇编指令详解中文版.pdf](https://github.com/rogerou/Arm-neon-intrinsics/blob/master/ARMV7%20NEON%E6%B1%87%E7%BC%96%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3%E4%B8%AD%E6%96%87%E7%89%88.pdf)
-### 指令周期，吞吐量可以看[Cortex_A57_Software_Optimization_Guide_external.pdf](https://github.com/rogerou/Arm-neon-intrinsics/blob/master/Cortex_A57_Software_Optimization_Guide_external.pdf)
-### [asm写法参考gcc内联汇编](https://github.com/tidyjiang8/arm-gcc-inline-assembler)
-### [intrinsics对应aarch64或aarch32 asm 指令说明](https://github.com/rogerou/Arm-neon-intrinsics/blob/master/IHI0073B_arm_neon_intrinsics_ref.pdf)
+
+|      |                                             |                                                              |
+| ---- | ------------------------------------------- | ------------------------------------------------------------ |
+|      | 更详细的armeabi-v7a文档可以看               | [1-ARMV7 NEON汇编指令详解中文版.pdf](./1-ARMV7 NEON汇编指令详解中文版.pdf) |
+|      | Intrinsic 指令对应汇编指令，以及armv7,armv8 | [2-0-arm-v7_v8_neon_intrinsics_手册.pdf](./2-0-arm-v7_v8_neon_intrinsics_手册.pdf) |
+|      | **非常好的Intrinsic 指令带例子**            | [!2-1-neon intrinsics-带简单指令.pdf](./!2-1-neon intrinsics-带简单指令.pdf) |
+|      | Arm 内嵌汇编指令手册                        | [2-2-arm-gcc-inline-assembler(内嵌汇编).pdf](./2-2-arm-gcc-inline-assembler(内嵌汇编).pdf) |
+|      | 指令周期，吞吐量                            | [3-Cortex_A57_Software_Optimization_Guide_指令周期.pdf](./3-Cortex_A57_Software_Optimization_Guide_指令周期.pdf) |
+|      | Neon intrinsics 编译器参考指南              | [5-NEON Intrics-编译器参考指南.pdf](./5-NEON Intrics-编译器参考指南.pdf) |
+
+
+
+#### [asm写法参考gcc内联汇编](https://github.com/tidyjiang8/arm-gcc-inline-assembler)
+
+#### [intrinsics对应aarch64或aarch32 asm 指令说明](https://github.com/rogerou/Arm-neon-intrinsics/blob/master/IHI0073B_arm_neon_intrinsics_ref.pdf)
 ## 初始化寄存器
 - vcreate_type: 将一个64bit的数据装入vector中，并返回元素类型为type的vector。r=a
 - vdup_n_type/vmov_n_type: 用类型为type的数值，初始化一个元素类型为type的新vector的所有元素。ri=a 
